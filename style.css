@@ -1,0 +1,684 @@
+* {
+  margin: auto;
+  padding: auto;
+  z-index: 5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ser {
+  margin-top: 25px !important;
+  margin-bottom: 100px !important;
+}
+
+.bip .p {
+  font-size: 10pt;
+}
+
+.clip p {
+  font-size: 11pt;
+}
+
+a {
+  cursor: pointer;
+}
+
+body {
+  background: #131313;
+  color: #eee;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 4.2rem;
+  line-height: 110%;
+}
+
+h2 {
+  font-size: 3.56rem;
+  line-height: 110%;
+}
+
+h3 {
+  font-size: 2.92rem;
+  line-height: 110%;
+}
+
+h4 {
+  font-size: 2.28rem;
+  line-height: 110%;
+}
+
+h5 {
+  font-size: 1.64rem;
+  line-height: 110%;
+}
+
+h6 {
+  font-size: 1.15rem;
+  line-height: 110%;
+}
+
+#splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  border: 1px hidden;
+  opacity: 1;
+  transition: opacity 1s;
+  z-index: 10;
+  background: #000;
+  color: #eee;
+  text-align: center;
+}
+
+#splash h4 {
+  font-family: "Courier New", Courier, monospace;
+  margin: 25px auto;
+}
+
+#splash div {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+#splash div img {
+  width: 200px;
+  height: 200px;
+  border: 1px hidden;
+  object-position: center;
+  object-fit: contain;
+  z-index: 10;
+}
+
+#header {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: hidden;
+  color: #eee;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  clear: both;
+}
+
+#header .logo {
+  float: left;
+  margin: 10px 25px;
+}
+
+#header .logo a {
+  text-decoration: none;
+  color: #eee;
+  font-size: 16pt;
+}
+
+#header .logo img {
+  width: 16pt;
+  height: 16pt;
+  display: inline-block;
+  margin: 5px auto;
+  vertical-align: middle;
+}
+
+#header .logo p {
+  margin: 5px auto;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16pt;
+}
+
+#header .menu a {
+  margin: 10px 25px;
+  text-decoration: none;
+  color: #eee;
+  font-size: 16pt;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#sidenav {
+  width: 65%;
+  height: 100vh;
+  display: none;
+  overflow: hidden;
+  clear: both;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9;
+  background: #1f1f1f;
+  color: #eee;
+}
+
+#sidenav a {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+  padding: 15px 15px;
+  border-bottom: 1px solid #666;
+  color: #eee;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: left;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#sidenav a:hover {
+  border-left: 5px solid #666;
+}
+
+#sidenav .bn a:hover {
+  border: 1px hidden;
+}
+
+#sidenav .bn {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: hidden;
+  background: #000;
+}
+
+#sidenav .bn img {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: hidden;
+  opacity: 0.3;
+}
+
+#sidenav .bn .mn {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #eee;
+  margin: auto;
+  padding: auto;
+  font-family: "Courier New", Courier, monospace;
+  border: 1px hidden;
+}
+
+#banner {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 53px;
+  background: url("./bn.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  color: #eee;
+}
+
+#banner .capt h5 {
+  margin-bottom: 35px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#banner .capt p {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#about {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+#about .pic .fig a,
+#footer a {
+  font-size: 20pt;
+  color: #eee;
+  text-decoration: none;
+  margin: 25px 5px;
+  display: inline-block;
+}
+
+#service .ser h5 {
+  margin: 25px auto;
+}
+
+#service .ser div p {
+  margin: auto;
+}
+
+#service .ser .bip div {
+  margin: 25px auto;
+}
+
+#service .ser .bip a {
+  width: auto;
+  height: auto;
+  display: block;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  background: #eee;
+  border-radius: 10px;
+  margin-top: 35px;
+}
+
+#footer {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: #000;
+}
+
+#footer p {
+  width: 85%;
+  height: auto;
+  display: block;
+  margin: 5px auto;
+  font-size: 10pt;
+}
+
+.shdw {
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 600px) {
+  .flow {
+    font-size: 1.2rem;
+  }
+
+  #header .menu {
+    float: right;
+    margin: 5px 5px;
+  }
+
+  #header .menu a {
+    display: none;
+  }
+
+  #header .menu .mn {
+    display: inline-block;
+  }
+
+  #banner .capt {
+    width: 85%;
+    height: auto;
+    display: block;
+    margin: 135px auto;
+  }
+
+  #banner .capt a {
+    width: 90%;
+    height: auto;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px auto;
+    text-decoration: none;
+    color: #000;
+    background: #eee;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  #about .sec,
+  #service .ser {
+    width: 85%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+    clear: both;
+  }
+
+  #about .pic,
+  #about .capt,
+  #about .clip {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+    margin: 85px auto;
+    border-bottom: 1px solid #666;
+  }
+
+  #about .clip {
+    padding-bottom: 25px;
+  }
+
+  #about .clip div {
+    width: 45%;
+    height: auto;
+    display: inline-block;
+    background: #eee;
+    color: #000;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  #about .pic {
+    text-align: center;
+  }
+
+  #about .pic .fig {
+    margin: 25px auto;
+  }
+
+  #about .pic img {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
+  #about .capt .tit {
+    width: 100%;
+    height: 200px;
+    display: block;
+    margin: 25px auto;
+    background: url("./bn1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px;
+  }
+
+  #about .capt .tit p {
+    width: auto;
+    height: auto;
+    display: block;
+    background: #000;
+    color: #eee;
+    margin: auto;
+    padding: 10px 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px 0px 10px 0px;
+  }
+
+  #about .capt .tit h5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px 10px;
+    color: #eee;
+  }
+
+  #about .capt .par p {
+    margin: 25px auto;
+  }
+
+  #about .capt .par a {
+    width: auto;
+    height: auto;
+    display: block;
+    padding: 10px 20px;
+    margin: 35px auto;
+    text-decoration: none;
+    color: #eee;
+    background: #000;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  #service .ser .bip {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+    margin-top: 25px;
+    margin-bottom: 55px;
+    border-bottom: 1px solid #666;
+    padding-bottom: 35px;
+  }
+
+  #service .ser .bip img {
+    width: 100%;
+    height: 175px;
+    display: block;
+    overflow: hidden;
+    margin: 25px auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+  }
+
+  #service .ser .tit {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+    color: #eee;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px hidden;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .flow {
+    font-size: 1.392rem;
+  }
+
+  #header .menu {
+    float: right;
+    margin: 5px 55px;
+  }
+
+  #header .menu a {
+    display: inline-block;
+  }
+
+  #header .menu .mn {
+    display: none;
+  }
+
+  #banner .capt {
+    width: 48%;
+    height: auto;
+    display: block;
+    margin: 145px 100px;
+    text-align: left;
+    float: left;
+  }
+
+  #banner .capt a {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    padding: 8px 35px;
+    margin-top: 25px;
+    margin-right: 25px;
+    text-decoration: none;
+    color: #000;
+    background: #eee;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  #about .sec,
+  #service .ser {
+    width: 90%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+    clear: both;
+    margin: 60px auto;
+    border-bottom: 1px solid #666;
+    padding-bottom: 35px;
+  }
+
+  #about .pic,
+  #about .capt {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+  }
+
+  #about .clip {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+  }
+
+  #about .clip div {
+    width: 22%;
+    height: auto;
+    display: inline-block;
+    background: #eee;
+    color: #000;
+    border-radius: 10px;
+    text-align: center;
+    margin: 25px 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  #about .pic {
+    width: 30%;
+  }
+
+  #about .capt {
+    width: 55%;
+    margin-left: 100px;
+  }
+
+  #about .pic {
+    text-align: center;
+  }
+
+  #about .pic img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 35px;
+  }
+
+  #about .capt .tit {
+    width: 100%;
+    height: 225px;
+    display: block;
+    margin: 25px auto;
+    background: url("./bn1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px;
+  }
+
+  #about .capt .tit p {
+    width: auto;
+    height: auto;
+    display: block;
+    background: #000;
+    color: #eee;
+    margin: auto;
+    padding: 10px 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px 0px 10px 0px;
+  }
+
+  #about .capt .tit h5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 25px 25px;
+    color: #eee;
+  }
+
+  #about .capt .par p {
+    margin: 55px auto;
+  }
+
+  #about .capt .par a {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    padding: 10px 35px;
+    margin-top: 15px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: #eee;
+    background: #000;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  #service .ser .bip {
+    width: 28%;
+    height: auto;
+    display: inline-block;
+    overflow: hidden;
+    margin: 25px 22px;
+  }
+
+  #service .ser .bip img {
+    width: 100%;
+    height: 175px;
+    display: block;
+    overflow: hidden;
+    margin: 25px auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+  }
+
+  #service .ser .tit {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
